@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,   
+        "title": "Playstation 5 Digital Edition",
+        "desc" : "Game Console",
+        "img" : "https://kingwrapz.com/pub/media/catalog/product/cache/505d32aa0238f03b10db3da3332b5743/p/l/playstation5digital.png"
+    },
+    {
+        "id": 2,
+        "title": "Playstation 5 Pro Edition",
+        "desc" : "Game Console",
+        "img" : "https://gmedia.playstation.com/is/image/SIEPDC/PS5-Disc-Edition-square-image-block-01-en-09oct20?$native--t$"
+    },
+    {
+        "id": 3,
+        "title": "Playstation 5 Controller",
+        "desc" : "Controller",
+        "img" : "https://www.pngall.com/wp-content/uploads/5/PS5-Controller-PNG-Image.png"
+    },
+    {
+        "id": 4,
+        "title": "Playstation 5 Headset",
+        "desc" : "Audio",
+        "img" : "http://cdn.shopify.com/s/files/1/0409/7245/products/gyellow_f7388be1-b40a-44b3-a068-03a7d7356eb8_1200x1200.png?v=1644597651"
+    },
+    {
+        "id": 5,
+        "title": "Playstation 4 Pro Edition",
+        "desc" : "Game Console",
+        "img" : "https://portjefflibrary.org/wp-content/uploads/2015/11/ps4-png-ps4-png-900.png"
+    },
+    {
+        "id": 6,
+        "title": "Tower Gaming Desktop ",
+        "desc" : "Game Desktop",
+        "img" : "https://upload.wikimedia.org/wikipedia/commons/2/20/Avant-Tower-Gaming-PC.png"
+    },
+    {
+        "id": 7,
+        "title": "Playstation 5 Digital Edition",
+        "desc" : "Monitor",
+        "img" : "https://www.benq.eu/content/dam/b2c/en/monitors/ew-ex/ex3415r/gallery/01-ex3415-front-high.png"
+    },
+    {
+        "id": 8,
+        "title": "Playstation 5 Digital Edition",
+        "desc" : "Equipment",
+        "img" : "https://cdn.shopify.com/s/files/1/0112/1203/0016/products/ONIKUMA-G21-CW902-Gaming-Keyboard-Mouse-Set-104-Keycaps-With-RGB-Backlight-keyboard-Gamer-Ergonomic-Mouse-For-PC-Laptop.png?v=1644802366"
+    }
+]
