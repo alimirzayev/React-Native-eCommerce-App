@@ -1,13 +1,16 @@
 import React from "react";
 import { View, StyleSheet, Text, Image, Pressable } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { useSelector } from "react-redux";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { MainStackNavigator, ContactStackNavigator } from "./StackNavigator";
+import { MainStackNavigator, CheckoutStackNavigator, SearchStackNavigator } from "./StackNavigator";
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = () => {
+  const state = useSelector((state) => state)
+
   return (
     <Tab.Navigator
     tabBarOptions={{
@@ -39,8 +42,8 @@ const BottomTabNavigator = () => {
       />
 
       <Tab.Screen
-      name="Contact"
-      component={ContactStackNavigator}
+      name="Search"
+      component={SearchStackNavigator}
       tabBarActiveTintColor= 'tomato'
       tabBarInactiveTintColor='gray'
       options={{
@@ -50,7 +53,7 @@ const BottomTabNavigator = () => {
       }}
       />
 
-      <Tab.Screen
+      {/* <Tab.Screen
       name="About"
       component={ContactStackNavigator}
       options={{
@@ -58,13 +61,13 @@ const BottomTabNavigator = () => {
           <Icon name="user" size={25} color="#EEF2FA" />
       )
       }}
-      />
+      /> */}
 
       <Tab.Screen
       name="Cart"
-      component={ContactStackNavigator}
+      component={CheckoutStackNavigator}
       options={{
-        tabBarBadge: 3,
+        tabBarBadge: `${state.cart.numberCart}`,
         tabBarBadgeStyle: { backgroundColor: 'red', height: 17, },
         tabBarIcon: ({ color, size }) => (
           <Icon name="shopping-cart" size={25} color="#EEF2FA" />

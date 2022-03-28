@@ -3,8 +3,9 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "../screens/Home";
 import About from "../screens/About";
-import Contact from "../screens/Contact";
+import Checkout from "../screens/Checkout";
 import Detail from "../screens/Detail"
+import Search from '../screens/Search'
 
 const Stack = createStackNavigator();
 
@@ -18,12 +19,22 @@ const MainStackNavigator = () => {
   );
 }
 
-const ContactStackNavigator = () => {
+const SearchStackNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Contact" component={Contact} />
+    <Stack.Navigator screenOptions={{headerShown: false, cardStyle: { backgroundColor: '#EEF2FA' }}}>
+      <Stack.Screen name="Search" component={Search} />
     </Stack.Navigator>
   );
 }
 
-export { MainStackNavigator, ContactStackNavigator };
+const CheckoutStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={{headerShown: false, cardStyle: { backgroundColor: '#EEF2FA' }}}>
+      <Stack.Screen name="Checkout" component={Checkout} />
+    </Stack.Navigator>
+  );
+}
+
+
+
+export { MainStackNavigator, CheckoutStackNavigator, SearchStackNavigator };

@@ -2,7 +2,7 @@ import React from "react";
 import {Button, View, Image, Pressable, Text} from 'react-native'
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import { ContactStackNavigator } from "./StackNavigator";
+import { CheckoutStackNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 
 const Drawer = createDrawerNavigator();
@@ -27,7 +27,7 @@ const DrawerNavigator = () => {
     screenOptions={screenOptionStyle}
     >
       <Drawer.Screen 
-      name="Products"
+      name="Gaming Store"
       component={TabNavigator}
       options={{
       headerRight: () => (
@@ -44,7 +44,7 @@ const DrawerNavigator = () => {
       ),
     }}
       />
-      <Drawer.Screen name="Contact" component={ContactStackNavigator} />
+      <Drawer.Screen name="Checkout" component={CheckoutStackNavigator} />
     </Drawer.Navigator>
   );
 }

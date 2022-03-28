@@ -20,9 +20,9 @@ const Card = (props) => {
   return (
     <View style={styles.card}>
       <Pressable
-        onPress={() => navigation.navigate('Detail')}
+        onPress={() => navigation.navigate('Detail',{id: props.id})}
       >
-            <Icon style={styles.heart} name="heart" size={25} color={toggle ? 'white' : 'red'}
+            <Icon style={styles.heart} name="heart" size={25} color={toggle ? 'white' : '#ff4d4d'}
             
             onPress={() => fav()}
             />
