@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useSelector } from "react-redux";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { MainStackNavigator, CheckoutStackNavigator, SearchStackNavigator } from "./StackNavigator";
+import { MainStackNavigator, CheckoutStackNavigator, SearchStackNavigator, LoginStackNavigator } from "./StackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -53,15 +53,15 @@ const BottomTabNavigator = () => {
       }}
       />
 
-      {/* <Tab.Screen
-      name="About"
-      component={ContactStackNavigator}
+      <Tab.Screen
+      name="Login"
+      component={LoginStackNavigator}
       options={{
         tabBarIcon: ({ color, size }) => (
           <Icon name="user" size={25} color="#EEF2FA" />
       )
       }}
-      /> */}
+      />
 
       <Tab.Screen
       name="Cart"

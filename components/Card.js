@@ -38,7 +38,7 @@ const Card = (props) => {
               resizeMode='contain'
             />
 
-            <Text>{props.desc}</Text>
+            <Text style={{fontSize: 14}}>{props.desc}</Text>
 
             <Text style={styles.heading}>{props.title}</Text>
         </Pressable>
@@ -80,7 +80,8 @@ const styles = StyleSheet.create({
         paddingBottom: 4,
         fontWeight: 'bold',
         color: "#4187FF",
-        fontSize: 18,
-        lineHeight: 21
+        fontSize: 15,
+        lineHeight: 21,
+        width: "90%"
     }
 })
